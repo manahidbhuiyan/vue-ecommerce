@@ -1,0 +1,88 @@
+//
+/// Featured.scss
+//
+.featured .carousel-top h5{
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.featured .carousel-top a:hover{
+  color: $theme-back2;
+}
+
+.featured .card-product{
+  display: flex;
+  margin: 20px 0;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
+}
+.featured .card-product:hover{
+  border-color: black;
+}
+.card-thumbnail{
+  width: 180px;
+  text-align: left;
+}
+.featured-img{
+  width: 120px;
+}
+.featured .card-text{
+  text-align: left;
+  margin-top: 19px;
+  position: relative;
+}
+.featured .item-name{
+  max-width: 100%;
+}
+.featured .card-text p{
+  margin: 0;
+}
+.featured .card-text .item-name{
+  margin-bottom: 10px !important;
+}
+.featured .card-text .card-p{
+  color: $theme-back2;
+  //padding-bottom: 5px;
+}
+
+
+// responsive
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .featured .card-product {
+    padding: 15px 10px;
+    flex-direction: row;
+  }
+  .card-thumbnail{
+    width: 40%;
+    text-align: left;
+  }
+  .featured-img{
+    width: 100px;
+  }
+  .featured .card-text{
+    margin-top: 10px;
+  }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .featured .card-product{
+    flex-direction: column;
+  }
+  .card-thumbnail{
+    width: 100%;
+    text-align: left;
+  }
+  .featured-img{
+    width: 185px;
+  }
+  .featured .carousel-top h5 {
+    margin-top: 15px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}

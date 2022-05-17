@@ -1,0 +1,18 @@
+//
+/// products division.scss
+//
+
+.product-division{
+  padding: 70px 0;
+}
+
+@media (min-width:991px) and (max-width: 1199px) {
+  .product-division{
+    padding: 70px 0;
+  }
+}
+@media (max-width: 990.8px) {
+  .product-division{
+    padding: 50px 0;
+  }
+}

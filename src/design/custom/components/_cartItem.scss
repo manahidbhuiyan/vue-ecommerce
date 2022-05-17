@@ -1,0 +1,35 @@
+//
+/// Card Item scss
+//
+
+.card-item{
+  padding: 70px 0;
+}
+
+.card{
+  width: 100%;
+  background-color: rgb(245,243,242) !important;
+  cursor: pointer;
+  border: transparent !important;
+}
+.card-item-image:hover{
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+
+//responsive
+
+@media (max-width: 1400px) {
+  .card-item{
+    padding: 60px 0;
+  }
+}
+@media (max-width: 991px) {
+  .card-item .card{
+    margin-bottom: 20px;
+  }
+  .card-item{
+    padding: 50px 0 0 0;
+  }
+}

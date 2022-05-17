@@ -1,0 +1,253 @@
+//
+//// footer.scss
+//
+
+.footer{
+  margin-top: auto;
+  background-color: $footer-bg;
+}
+.subscribe-area{
+  padding: 50px 0;
+}
+.subscribe-text{
+  text-align: left;
+}
+.subscribe-text p{
+  margin: 0;
+}
+.subscribe-option{
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+}
+.form-email {
+  border: none;
+  width: 70%;
+  padding: 15px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.subs-btn{
+  width: 30%;
+}
+.form-email:focus {
+  outline: 0;
+}
+.form-email::placeholder{
+  font-size: 13px;
+  color: #a3a5a7;
+}
+.subs-btn {
+  background-color: $subscribe-button;
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  color: $font-black;
+  width: 150px;
+  border-radius: 5px;
+}
+.subs-btn:focus{
+  box-shadow: none;
+}
+
+//----------- More Page Area ---------
+
+.more-page{
+  padding: 50px 0;
+  text-align: left;
+}
+.more-page span{
+  padding: 0 10px;
+  border-right: 1px solid #a3a5a7;
+  cursor: pointer;
+  color: #7D7D7D;
+}
+.more-page span:last-child{
+  border-right: none;
+}
+
+.more-page span:hover{
+  color: $list-hover-color;
+}
+.more-page span:first-child:hover{
+    color: #7D7D7D;
+}
+
+.page-list{
+  display: flex;
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.page-cat{
+  width: 15% !important;
+  padding: 0 !important;
+  border-right: none !important;
+}
+
+//----------- Details Area --------
+
+.footer-details{
+  padding: 50px 0;
+  text-align: left;
+}
+.footer-details ul{
+  margin: 0;
+  padding: 0;
+}
+.footer-details ul li{
+  list-style: none;
+  margin: 0;
+  padding: 5px 0;
+  cursor: pointer;
+  color: #7D7D7D;
+}
+.footer-details ul li:hover{
+  color: $list-hover-color;
+}
+.site-details p{
+  padding: 5px 0;
+}
+.footer-social{
+  display: flex;
+}
+.footer-social li{
+  padding-right: 10px !important;
+
+}
+.footer-social li a{
+  color: $font-black !important;
+}
+.last-footer{
+  background-color: $bg-black2;
+  color: #7D7D7D;
+  padding: 20px 0;
+  height: 60px;
+}
+.last-footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-social, .footer-social p{
+  margin: 0;
+}
+.footer-social li{
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+.footer-social li a i{
+  color: #7D7D7D;
+}
+
+//----------- fixed footer -----------
+
+.mobile-footer{
+  display: none;
+  justify-content: space-around;
+  padding: 20px 0 0 0;
+  height: 60px;
+  background-color: white;
+  box-sizing: content-box;
+  border-top: 1px solid beige;
+  z-index: 10 !important;
+}
+.mobile-footer-item{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.mobile-footer-item .b-icon{
+  width: 100%;
+  height: 22px;
+  fill: #a7a7b5;;
+}
+.mobile-footer-item span{
+  font-size: 12px;
+  color: #a7a7b5;
+}
+
+//Responsive
+
+@media (max-width: 900px) {
+  .page-list{
+    flex-direction: column;
+  }
+  .page-cat{
+    margin: 0;
+  }
+  .more-page span:first-child{
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .mobile-footer{
+    display: flex;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .last-footer{
+    padding: 20px 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .last-footer{
+    padding: 20px 0 120px;
+  }
+  .footer-right-text{
+    font-size: 12px;
+  }
+  .footer-social{
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .last-footer{
+    padding: 20px 0 140px;
+  }
+  .footer-right-text{
+    font-size: 14px;
+  }
+  .footer-social{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .last-footer{
+    padding: 20px 0 150px;
+  }
+}
+@media (max-width: 380px) {
+  .last-footer{
+    padding: 20px 0 160px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .footer-option-title{
+  margin-bottom:5px;
+}
+  .site-details, .footer-service, .footer-links{
+    margin-bottom: 20px !important;
+  }
+}
+@media (max-width: 576px) {
+  .site-details, .footer-service, .footer-links{
+    margin-bottom: 20px !important;
+  }
+  .footer-option-title{
+    margin-bottom: 5px ;
+  }
+  .last-footer .container{
+    flex-direction: column;
+  }
+  .footer-social{
+    justify-content: center;
+  }
+  .more-page {
+    padding: 50px 0 0 0;
+  }
+}
+
+

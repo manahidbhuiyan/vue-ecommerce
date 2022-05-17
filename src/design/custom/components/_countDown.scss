@@ -1,0 +1,32 @@
+//
+/// countdown scss
+//
+.countdown{
+  display: flex;
+  justify-content: center;
+}
+.countdown__block{
+  margin: 10px 3px 0;
+  padding: 9px 10px;
+  width: 47px;
+  background: black;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif !important;
+  border-radius: 4px;
+  line-height: 1;
+}
+.sec__countdown{
+  background-color: #fab702 !important;
+}
+.countdown__digit{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.countdown__text{
+  font-size: 9px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}

@@ -1,0 +1,96 @@
+//
+/// Same Category Products.scss
+//
+
+
+.tiny-slider-top{
+  display: flex;
+  justify-content: space-between;
+}
+.tiny-slider-top ul{
+  display: flex;
+}
+.tiny-slider-top ul li{
+  list-style: none;
+  padding: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.sameProduct .card{
+  width: 340px;
+  height: 440px !important;
+  padding: 0 !important;
+  margin: 18px 0 0;
+  border: 1px solid #f2f2f2 !important;
+  box-shadow: 0 5px 10px 0 rgb(47 47 47 / 4%);
+}
+.sameProduct .second-image{
+  display: none !important;
+}
+.sameProduct .card:hover{
+  .hover-item{
+    display: block;
+    margin-top: 80% !important;
+  }
+  .first-image{
+    display: none;
+  }
+  .second-image{
+    display: block !important;
+  }
+}
+
+// card body
+
+.sameProduct .card-img-top{
+  width: 100%;
+  position: relative;
+}
+.sameProduct .card-body{
+  color: $header-item-color;
+  background-color: $bg-white;
+  padding: 20px 10px !important;
+  text-align: left;
+}
+.sameProduct .card-body-top{
+  padding: 0 0 20px;
+  border-bottom: 1px solid #f1f0f0;
+}
+.sameProduct .card-body p{
+  margin: 0;
+}
+.sameProduct .second-text{
+  display: flex;
+  justify-content: center;
+}
+.prev, .next{
+  cursor: pointer;
+}
+.prev-customize-icon{
+  position: absolute;
+  right: 15%;
+  margin-top: -48px;
+  font-size: 30px !important;
+}
+.next-customize-icon{
+  right: 5%;
+  margin-top: -507px;
+  position: absolute;
+  font-size: 30px !important;
+}
+#carousel_prev_gy6mks7navs{
+  display: block !important;
+}
+// responsive design
+
+@media (max-width: 991px) {
+  .sameProduct .card{
+    width: 320px;
+    height: 420px;
+  }
+}
+@media (max-width: 576px) {
+  .next-customize-icon{
+    margin-top: -508px;
+  }
+}

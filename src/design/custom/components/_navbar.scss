@@ -1,0 +1,254 @@
+//
+///navbar.scss
+//
+
+.select-position {
+  //margin-top: 50px;
+  top: 50px;
+  box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+  position: sticky;
+  overflow-y: hidden; /* Disable horizontal scroll */
+  z-index: 111;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  height: $navbar-height;
+  background-color: $header-bg;
+  padding: 10px;
+}
+.nav-item {
+  padding-left: 20px;
+}
+.nav-link:hover {
+  color: $theme-back2 !important;
+}
+.site-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.collapse_toggle {
+  display: block !important;
+}
+.sidenab_toggle {
+  display: block !important;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  top: 0; /* Stay at the top */
+  left: 0;
+  //background-color: #111; /* Black*/
+  background-color: #202020; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px; /* Place content 60px from the top */
+  transition: 1s !important; /* 0.5 second transition effect to slide in the sidenav */
+  z-index: 555;
+}
+.sidenav .side-title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: $bg-white;
+  margin-bottom: 40px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  font-weight: bold;
+  transition: 1s !important; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav .closebtn svg {
+  fill: #ffffff;
+}
+.buttonRotate {
+  animation: roll 2s linear;
+  transform: rotate(360deg);
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+// sidenav button
+.btn-sidemenu:focus {
+  box-shadow: none !important;
+}
+.btn-sidemenu:active {
+  background-color: #252525;
+}
+//Side categories list
+.sideCategoriesList {
+  margin-top: 30px;
+}
+.sideCategoriesList .menu-item {
+  padding: 10px !important;
+  color: $bg-white !important;
+  text-transform: uppercase;
+  transition: 1s !important;
+}
+.sideCategoriesList .menu-item p {
+  margin: 0 !important;
+  font-size: 16px;
+}
+.default-show {
+  display: block;
+}
+.sidePage2 {
+  display: none;
+}
+.sidePage3 {
+  display: none;
+}
+// ++++++++++ click option
+.sidePage1st {
+  display: block;
+}
+.sidePage2nd {
+  display: none;
+}
+.sidePage3rd {
+  display: none;
+}
+.toggoleSidepage1 {
+  display: none;
+}
+.toggoleSidepage2 {
+  display: block;
+}
+.toggoleSidepage3 {
+  display: none;
+}
+.noUserPage {
+  display: none;
+}
+.userPage {
+  display: block;
+}
+
+//****** login part
+.sidenav-login {
+  margin-top: 30px;
+  padding: 10px;
+  //display: none;
+}
+
+.login-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+.login-title p {
+  color: $bg-white;
+  margin: 0;
+}
+.login-title span a {
+  color: #1696e7;
+  font-size: 16px;
+  padding: 0;
+}
+.login-inner {
+  text-align: left;
+}
+.login-inner label {
+  color: #7e7e7e;
+  font-size: 12px;
+  padding: 20px 0 10px;
+}
+.login-inner input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.login-inner input:focus {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+.checkbox {
+  margin-top: 20px;
+}
+.checkbox input {
+  width: 13px;
+  cursor: pointer;
+}
+.checkbox span {
+  font-size: 12px;
+  color: #7e7e7e;
+}
+.login-inner .btn-login {
+  width: 100%;
+  background-color: $theme-back2;
+  color: $bg-white;
+  padding: 5px;
+  margin: 10px 0 20px;
+}
+.btn-login:hover {
+  color: $bg-white !important;
+}
+.btn-login:focus {
+  box-shadow: none !important;
+}
+.login-inner a {
+  text-decoration: none;
+  color: #1696e7;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none;
+  }
+  .closenav {
+    width: 50% !important;
+    top: 0;
+    padding: 20px;
+  }
+  .select-position {
+    z-index: 333;
+  }
+}
+@media (max-width: 576px) {
+  .closenav {
+    width: 100% !important;
+  }
+}

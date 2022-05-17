@@ -1,0 +1,76 @@
+//
+/// specification website.scss
+//
+.spe-web{
+  padding: 30px 0;
+}
+.spe-web .col-md-6{
+  border-right: 1px solid $border2 ;
+}
+.spe-web .col-md-6:last-child{
+  border-right:none ;
+}
+.spe-web-item{
+  text-align: center;
+}
+
+.spe-web-item .image-area{
+  margin-bottom: 20px;
+  min-height: 47px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: 1s linear;
+  transform: rotateY(0);
+  font-size: 36px;
+}
+.spe-web-item img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.spe-web-item:hover .image-area{
+  transform: rotateY(360deg);
+}
+.spe-web-item p{
+  color: black ;
+  font-weight: 500;
+}
+.spe-web-item:hover p{
+  color: blue !important;
+}
+.spe-web-item span{
+  color: #7D7D7D;
+}
+
+//responsive----------
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .spe-web .second-item{
+  border-right: none !important ;
+  }
+}
+@media (max-width: 768px) {
+  .spe-web-item{
+    margin-bottom: 30px;
+  }
+  .spe-web .col-md-6{
+    border-right: none !important ;
+  }
+  .spe-web-item .image-area{
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .spe-web-item p{
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.8px) {
+
+}
+
+

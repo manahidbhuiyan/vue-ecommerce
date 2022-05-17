@@ -1,0 +1,218 @@
+//
+/// Deal day Item CSS
+//
+
+.deal-day{
+  padding: 70px 0;
+  margin: 0;
+  background-color: $bg-banner;
+}
+.non-carousel{
+  text-align: left;
+}
+.deal-day-picture{
+  width: 95% !important;
+}
+.banner-down-text{
+  margin: 20px 0 0 0 !important;
+  line-height: 1;
+  color: gray;
+}
+
+.carousel-top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.carousel-top h3{
+  margin-top: 5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.carousel-top a{
+  color: $theme-back2;
+  text-decoration: none;
+  margin-top: 13px;
+}
+
+.deal-day .card{
+  width: 262px !important;
+  padding: 0 !important;
+  margin: 18px 0 0;
+  border: 1px solid #f2f2f2 !important;
+  box-shadow: 0 5px 10px 0 rgb(47 47 47 / 4%);
+}
+
+.deal-day .second-image{
+  display: none !important;
+}
+.deal-day .card:hover{
+  .hover-item{
+    display: block;
+    margin-top: 73% !important;
+  }
+  .first-image{
+    display: none;
+  }
+  .second-image{
+    display: block !important;
+  }
+}
+.deal-day .sale {
+  color: #ffffff;
+  background-color: orangered;
+  font-size: 12px;
+  padding: 1px 6px !important;
+  border-radius: 5px;
+  margin-right: 10px !important;
+  margin-top: 20px !important;
+  position: absolute;
+  right: 0;
+}
+  // card body
+
+.deal-day .card-img-top{
+  width: 100%;
+  position: relative;
+}
+.deal-day .card-body{
+  color: $header-item-color;
+  background-color: $bg-white;
+  padding: 20px 0 !important;
+  text-align: left;
+}
+.deal-day .card-body-top{
+  padding: 0 0 20px;
+  border-bottom: 1px solid #f1f0f0;
+}
+.deal-day .card-body p{
+  margin: 0;
+}
+.deal-day .second-text{
+  display: flex;
+  justify-content: center;
+}
+.deal-day .card-body-bottom{
+  padding: 20px 20px 0px 20px ;
+}
+.sell-progress{
+  height: 8px !important;
+  margin: 10px 0 25px;
+}
+.progress-bar{
+  background-color: $theme-back1 !important;
+}
+.products{
+  font-size: 12px;
+  display: flex;
+  justify-content:space-between;
+}
+.deal-day .collection-name{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.deal-day .button-group{
+  margin-bottom: 50px ;
+}
+.deal-day .button-group .button{
+  background: #F2F2F2 !important;
+  padding: 20px 20px;
+  color: $header-item-color;
+}
+.deal-day .button-group .button:active {
+  box-shadow: none !important;
+}
+.deal-day .button-group .button.is-checked {
+  color: $theme-back2 !important;
+  text-shadow: none !important;
+}
+.deal-day .button-group .button:first-child{
+  padding:20px 40px !important;
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+.deal-day .button-group .button:last-child{
+  padding:20px 40px !important;
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+
+// Responsive
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .deal-day .card-body-top {
+    padding: 0 0 15px;
+  }
+  .deal-day .card-body {
+    padding: 15px 0 !important;
+  }
+  .deal-day .card-body-bottom {
+    padding: 15px 15px 0 15px;
+  }
+  .sell-progress {
+    margin: 10px 0 15px;
+  }
+  .deal-day-picture {
+    width: 100% !important;
+  }
+  .carousel-top {
+    margin-bottom: 14px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px){
+  .carousel-top h3{
+    margin-top: 0;
+  }
+  .carousel-top a{
+    margin-top: 8px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .deal-day {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 991px) {
+  .deal-day{
+    padding: 50px 0;
+  }
+  .non-carousel{
+    margin-bottom: 40px;
+  }
+  .deal-day-picture{
+    width: 100% !important;
+  }
+  .categories-item {
+    margin-bottom: 30px;
+  }
+  .categories-text{
+    padding-top: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (max-width: 767.8px) {
+
+}
+@media (min-width: 576px) and (max-width: 767.8px) {
+  .deal-day .card {
+    width: 240px !important;
+    margin-top: 14px !important;
+  }
+}
+@media (max-width: 575.8px) {
+  .deal-day .card {
+    width: 225px !important;
+    margin-top: 14px !important;
+  }
+}
+@media (max-width: 500px) {
+  .deal-day .card {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 400px) {
+
+}

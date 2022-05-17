@@ -1,0 +1,72 @@
+//
+/// ProductSpecification.scss
+//
+.show{
+  display: block !important;
+}
+.hide{
+  display: none !important;
+}
+
+.proSpecification{
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  margin: 0;
+  border-bottom: 1px solid $border2 ;
+  font-weight: 600;
+}
+.btn-specification{
+  background-color: transparent;
+  color: black;
+  padding: 0 15px 15px 0 !important;
+  border: transparent;
+  font-weight: 600 !important;
+}
+
+.btn-specification:focus{
+  border-bottom: 1px solid orangered ;
+  box-shadow: none !important;
+  border-radius: 0;
+}
+.specification-details{
+  padding-top: 30px;
+}
+.description{
+  text-align: left;
+  color: $font2 ;
+  font-size: 15px;
+}
+//additional info
+
+.additional{
+  border-top: 1px dotted rgba(0,0,0,.1) ;
+  border-bottom: 1px dotted rgba(0,0,0,.1) ;
+  border-radius: 0;
+  padding: 0;
+  margin: 30px 0;
+  display: none;
+}
+.additional a{
+  text-decoration: none;
+}
+.additional p{
+  margin: 0;
+  padding: 10px;
+}
+.addSize{
+  border-top: 1px dotted rgba(0,0,0,.1) ;
+  background-color: $bg-banner;
+}
+//
+.specification{
+  display: none;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .btn-specification{
+
+    padding: 0 10px 10px 0 !important;
+    font-size: 16px !important;
+  }
+}

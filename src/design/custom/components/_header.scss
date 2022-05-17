@@ -1,0 +1,133 @@
+//
+/// Header.scss
+//
+
+.header{
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  height: $header-height;
+  padding: 10px 0;
+  background-color: $header-bg;
+  z-index: 200;
+  border-bottom: 1px solid #eee;
+  font-family: 'Poppins', sans-serif ;
+
+}
+.header .container{
+  display: flex;
+  justify-content: space-between;
+}
+.header-left-side{
+  display: flex;
+}
+.header-left-side .dropdown{
+  border: none;
+  background-color: transparent;
+}
+.my-account{
+  display: none !important;
+}
+.header-left-side .dropdown .btn-secondary{
+  border: none;
+  color: $header-item-color;
+  background-color: transparent;
+  padding: 0;
+}
+.header-left-side .dropdown .btn-secondary.dropdown-toggle {
+  color: $header-item-color;
+  background-color: transparent !important;
+  border: none ;
+  padding-right: 10px;
+  margin-right: 10px;
+  box-shadow: none;
+
+}
+.header-left-side .dropdown-item{
+  font-size: 12px ;
+  color: $header-item-color !important;
+  border-right: 1px black;
+}
+.drop-list:after{
+  content: "|";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  color: #bcbcbc;
+  z-index: 11;
+}
+
+.header-right-side{
+  position: relative;
+  display: flex;
+}
+.header-right-side a{
+  color: $header-item-color;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-right: 1px solid #bcbcbc;
+  text-decoration: none;
+}
+.header-right-side a:hover{
+  color: $theme-back2;
+}
+.header-right-side a:last-child{
+  padding-right: 0px;
+  border-right: none;
+}
+.compare-icon{
+  transform: rotate( 45deg );
+}
+.select-items{
+  border-radius: 100%;
+  padding: 2px 3px 0 4px;
+  color: $font-black !important;
+  background-color: $theme-back1;
+  margin-top: -6px;
+  margin-left: -5px;
+  position: absolute;
+  font-size: 9px;
+}
+
+@media (max-width: 991px) {
+  .header-left-side span{
+    font-size: 12px;
+    padding-top: 3px;
+  }
+  .header-left-side .dropdown .btn-secondary.dropdown-toggle {
+    font-size: 12px;
+  }
+  .right-top{
+    font-size: 12px;
+    padding-top: 5px;
+    //margin-right: 10px;
+  }
+}
+@media (max-width: 767.8px) {
+  .header-left-side{
+    justify-content: center;
+  }
+  .header-right-side{
+    display: none;
+  }
+  .header .container{
+    flex-direction: column;
+  }
+  .my-account{
+    display: block !important;
+    font-size: 12px;
+    text-decoration: none;
+    color: $header-item-color !important;
+  }
+  .drop-list2:after{
+    content: "|";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    color: #bcbcbc;
+  }
+}

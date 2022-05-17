@@ -1,0 +1,121 @@
+//
+///search.scss
+//
+
+.search-section{
+  background-color: $bg-banner;
+  padding: 20px 0 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.search-section .container{
+  display: flex;
+  justify-content: space-between;
+}
+.all-category{
+  transition: 2s all ease-in-out;
+}
+
+.all-category .btn-sidebar{
+  background-color: $theme-back1 ;
+  border: transparent;
+  border-radius: 0 ;
+  text-align: left ;
+  color: $font-black ;
+  font-weight: 600;
+  width: 230px;
+  height: 70px;
+  position: relative;
+  margin-top: -20px !important;
+}
+.all-category .btn-sidebar:focus{
+  box-shadow: none;
+}
+.all-category .side-menu{
+  width: 230px;
+  margin-top: 12px !important;
+  background-color: $bg-white;
+  padding: 10px;
+  position: absolute;
+  border: 1px solid #f2f2f2 !important;
+  z-index: 11;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition:2s !important;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  transition:2s;
+}
+
+.list-icon{
+  font-size: 25px !important;
+}
+.inner-search-area{
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+.search-box{
+  width: 400px !important;
+  margin-right: 10px;
+  border: transparent !important;
+}
+.search-box:focus{
+  box-shadow: none !important;
+  border: transparent !important;
+}
+.inner-search-area p{
+  margin-top: 5px;
+  padding: 0;
+  color: #7D7D7D;
+  font-size: 15px;
+}
+
+.menu-item{
+  display: flex !important;
+  list-style: none;
+  padding: 8.4px 0;
+  cursor: pointer;
+}
+.menu-item:hover{
+  background-color: $bg-white !important;
+  color: $theme-back2 !important;
+  .dropdown-item-thumbnail{
+    border: 2px solid $theme-back2;
+  }
+
+}
+.menu-item p {
+  font-size: 12px ;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+.dropdown-item-thumbnail{
+  width: 40px;
+  height: 40px !important;
+  border-radius: 50% !important;
+  padding: 2px !important;
+}
+.changemenu{
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 990.8px) {
+  .all-category .side-menu{
+    z-index: 11;
+    margin-top: 41px !important;
+  }
+  .inner-search-area {
+    flex-direction: column;
+    text-align: right;
+    padding-left: 60px;
+  }
+  .search-box{
+    margin: 0;
+  }
+}
+@media (max-width: 767.8px) {
+  .search-section{
+    display: none;
+  }
+}

@@ -1,0 +1,61 @@
+/*
+Template Name: MyShopping - A full responsive ecoomerce website
+Author: Mahabub Alam
+Version: 1.0.0
+Website: https://manahid.com/
+Contact: ma.nahid960@gmail.com
+File: Main Css File
+*/
+
+//Fonts
+@import "custom/fonts/fonts.scss";
+
+////Core files
+//@import "~bootstrap/scss/functions";
+@import "variables.scss";
+//@import "variables";
+//@import "~bootstrap/scss/mixins";
+//@import '~bootstrap/scss/bootstrap';
+//@import 'bootstrap';
+//@import '~bootstrap-vue/src/index.scss';
+
+// Components
+@import "custom/components/header";
+@import "custom/components/footer";
+@import "custom/components/navbar";
+@import "custom/components/search";
+@import "custom/components/cartItem";
+@import "custom/components/isotope";
+@import "custom/components/dayItem";
+@import "custom/components/countDown";
+@import "custom/components/categories";
+@import "custom/components/featured";
+@import "custom/components/reviews";
+@import "custom/components/topRated";
+@import "custom/components/productDivision";
+@import "custom/components/productSpecification";
+@import "custom/components/specificationWebsite";
+@import "custom/components/sameCategoryProduct";
+@import "custom/components/shopLeftOption";
+
+//pages
+@import "custom/pages/home";
+@import "custom/pages/account";
+@import "custom/pages/productDetails";
+@import "custom/pages/shop";
+
+
+h1,h2,h3,h4,h5,h6,p{
+  font-family: 'Poppins', sans-serif !important;
+}
+ul,li,.btn,span{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+@media (min-width: 1500px) and (max-width: 1920px) {
+  .container{
+    max-width: 1440px !important;
+  }
+}
+
+

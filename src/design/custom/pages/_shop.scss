@@ -1,0 +1,189 @@
+//
+/// shop.scss
+//
+
+.shop-view {
+  display: flex;
+  margin: 30px 0;
+}
+.left-view {
+  width: 25%;
+  padding: 0 40px 0 20px;
+  transition: 1s !important; /* 0.5 second transition effect to slide in the sidenav */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+.right-view {
+  width: 75%;
+}
+//left view inner section
+
+//right view inner section
+.sideShowButton {
+  display: none;
+}
+.all-categories {
+  position: relative;
+  background-color: $bg-banner;
+  padding: 30px 0 70px 0;
+}
+.categories-top {
+  text-align: left;
+  padding: 0 0 30px 20px;
+}
+.all-categories .categories-item {
+  padding: 0 20px;
+}
+.all-categories .categories-thumb {
+  background-color: $bg-white;
+  padding: 5px;
+  position: relative;
+}
+.categories-item-quantity {
+  width: 20px;
+  height: 20px;
+  border: none;
+  color: white;
+  background-color: $theme-back2;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+}
+.all-categories .categories-thumb img {
+  width: 150px !important;
+  height: auto !important;
+}
+.all-categories .categories-text {
+  margin-top: 10px;
+  padding-top: 0;
+  background-color: transparent;
+  text-align: left;
+}
+.all-categories .prev-customize-icon {
+  position: absolute;
+  left: 75%;
+  margin-top: -71px;
+  font-size: 20px !important;
+}
+.all-categories .next-customize-icon {
+  left: 80%;
+  margin-top: -242px;
+  position: absolute;
+  font-size: 20px !important;
+}
+//Top Collection
+
+// All product list
+.all-products {
+  padding: 70px 0;
+}
+.all-products a {
+  text-decoration: none;
+  color: $font2;
+}
+.all-products-option {
+  display: flex;
+  justify-content: space-between;
+}
+.right-option span {
+  cursor: pointer;
+}
+.right-option span:first-child {
+  cursor: auto;
+}
+.option-icon-button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid $border2;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.option-icon-button:hover {
+  border-color: black;
+}
+.default-sort {
+  background-color: transparent !important;
+  color: $font2;
+  font-size: 14px !important;
+  padding: 5px;
+  border: 1px solid $border2 !important;
+  border-radius: 4px;
+}
+.default-sort:focus {
+  box-shadow: none !important;
+}
+.sort-button .dropdown-menu {
+  margin: 0;
+  padding: 0;
+}
+.sort-button .dropdown-menu li {
+  padding: 7px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.sort-button .dropdown-menu li:hover {
+  background-color: $theme-back2;
+  color: white;
+}
+
+//responsive
+
+@media (max-width: 576px) {
+  .all-categories .next-customize-icon {
+    margin-top: -264px;
+  }
+  .sideShow {
+    width: 100% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.8px) {
+  .all-categories .next-customize-icon {
+    margin-top: -288px;
+  }
+  .sideShow {
+    width: 75% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 990.8px) {
+  .all-categories .next-customize-icon {
+    margin-top: -295px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1500px) {
+  .all-categories .next-customize-icon {
+    margin-top: -265px;
+  }
+}
+
+@media (max-width: 991px) {
+  #app {
+    position: relative;
+  }
+  .left-view {
+    width: 0;
+    padding: 0;
+    z-index: 422;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: $bg-white;
+  }
+  .sideShowButton {
+    display: block;
+  }
+  .right-view {
+    width: 100%;
+  }
+  .sideclose {
+    width: 0;
+    padding: 0;
+  }
+  .sideShow {
+    width: 50%;
+    padding: 0 40px 0 20px;
+  }
+}

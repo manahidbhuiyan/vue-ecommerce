@@ -1,0 +1,256 @@
+//
+/// isotope.scss
+//
+
+.isotope-area{
+  padding: 70px 0;
+  text-align: center;
+}
+
+.isotope-area .card{
+  height: 440px !important;
+  width: 23%;
+  padding: 0 !important;
+  border: 1px solid $border1 !important;
+  margin: 12px;
+}
+.second-image{
+  display: none;
+}
+.isotope-area .card:hover{
+  .hover-item{
+    display: block;
+  }
+  .first-image{
+    display: none;
+  }
+  .second-image{
+    display: block;
+  }
+}
+.isotope-area .card-img-top{
+  width: 100%;
+  position: relative;
+}
+.offer-sale{
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between !important;
+  margin-top: 20px !important;
+}
+.offer{
+  color: $bg-white;
+  background-color: $theme-back1;
+  font-size: 12px;
+  padding: 1px 6px !important;
+  border-radius: 5px;
+  margin-left: 10px !important;
+
+}
+.sale{
+  color: $bg-white;
+  background-color: $theme-back2;
+  font-size: 12px;
+  padding: 1px 6px !important;
+  border-radius: 5px;
+  margin-right: 10px !important;
+}
+.isotope-area .card-body{
+  color: $header-item-color;
+  background-color: $bg-white;
+  padding: 20px !important;
+  text-align: left;
+}
+.isotope-area .card-body p{
+ margin: 0;
+}
+.item-name {
+  max-width: 70%;
+}
+.isotope-area .collection-name{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.isotope-area .button-group{
+  margin-bottom: 50px ;
+}
+.isotope-area .button-group .button{
+  background: #F2F2F2 !important;
+  padding: 20px 20px;
+  color: $header-item-color;
+  border: none;
+}
+.isotope-area .button-group .button:active {
+  box-shadow: none !important;
+}
+.isotope-area .button-group .button.is-checked {
+  color: $theme-back2 !important;
+  text-shadow: none !important;
+}
+.isotope-area .button-group .button:first-child{
+  padding:20px 40px !important;
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+.isotope-area .button-group .button:last-child{
+  padding:20px 40px !important;
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+.hover-item{
+  position: absolute;
+  width: 100%;
+  margin-top: 79% !important;
+  display: none;
+  transition: all ease 1s;
+
+}
+.add-section{
+  display: flex;
+  justify-content: center;
+  background-color: $bg-white;
+  width: 100%;
+  z-index: 555;
+  border-radius: 0 !important;
+}
+.add-section-item{
+  color: $font-black;
+  padding: 7px 12px 5px;
+}
+.btn-add-cart{
+  width: 100%;
+  background-color: $bg-black1 !important;
+  color: $bg-white !important;
+  font-size: 13px !important;
+  text-transform: uppercase;
+  padding: 7px;
+  border-radius: 0 !important;
+}
+.btn-add-cart:focus{
+ box-shadow: none !important;
+}
+.item-star .fas{
+  color: $theme-back1;
+}
+
+// responsive design
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .isotope-area .card{
+    height: 400px !important;
+    width: 23%;
+    margin: 10px;
+  }
+
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .isotope-area {
+    padding: 60px 0;
+  }
+  .isotope-area .card{
+    height: 420px !important;
+    width: 31%;
+    margin: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .isotope-area {
+    padding: 50px 0;
+  }
+  .isotope-area .button-group {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+  }
+  .isotope-area .button {
+    padding: 10px 10px !important;
+  }
+  .isotope-area .button-group .button:first-child{
+    padding:10px 10px !important;
+  }
+  .isotope-area .button-group .button:last-child{
+    padding:10px 10px !important;
+  }
+  .isotope-area .collection-name{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 990.8px) {
+
+  .isotope-area .card{
+    height: 350px !important;
+    width: 31%;
+    margin: 10px;
+  }
+
+  .isotope-area .button-group {
+    width: 450px;
+  }
+  .hover-item{
+    margin-top: 69% !important;
+  }}
+@media (min-width: 576px) and (max-width: 767.8px) {
+
+  .isotope-area .card{
+    height: 360px !important;
+    width: 46%;
+    margin: 10px;
+  }
+  .hover-item{
+    margin-top: 87% !important;
+  }
+
+  .isotope-area .button-group {
+    width: 450px;
+  }
+  .hover-item{
+    margin-top: 72% !important;
+  }
+}
+@media (max-width: 575.8px) {
+
+  .isotope-area .card {
+    height: 660px !important;
+    width: 100%;
+    margin: 10px auto !important;
+  }
+
+  .isotope-area .button-group {
+    width: 220px;
+  }
+  .isotope-area .button {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .isotope-area .card{
+    height: 550px !important;
+    width: 100%;
+    margin: 10px auto !important;
+  }
+  .hover-item{
+    margin-top: 83% !important;
+  }
+
+}
+@media (max-width: 400px) {
+  .isotope-area .card{
+    height: 490px !important;
+    width: 100%;
+    margin: 10px auto !important;
+  }
+  .hover-item{
+    margin-top: 83% !important;
+  }
+
+}
+
+
+
+
+
